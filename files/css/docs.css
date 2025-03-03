@@ -1,0 +1,127 @@
+/* Docs sample */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif; /* Make sure you use a good readable font */
+}
+
+#canvas {
+    width: 800px;
+    height: 550px;
+    margin: 200px auto;
+    position: relative;
+}
+
+#book-zoom {
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -ms-transition: -ms-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+}
+
+.animated {
+    -webkit-transition: margin-left 0.2s ease-in-out;
+    -moz-transition: margin-left 0.2s ease-in-out;
+    -o-transition: margin-left 0.2s ease-in-out;
+    -ms-transition: margin-left 0.2s ease-in-out;
+    transition: margin-left 0.2s ease-in-out;
+}
+
+.sample-docs {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: 785px;
+    height: 500px;
+    position: relative;  /* Make sure it's positioned correctly */
+}
+
+.sample-docs .page {
+    width: 393px;
+    height: 500px;
+    background-color: white;
+    object-fit: contain;  /* Remove object-fit from here */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.sample-docs .hard {
+    background-image: url('../pics/covers.png');  /* Ensure the image path is correct */
+    background-size: cover;
+    height: 100%;
+}
+
+.sample-docs .p1 {
+    background-image: url('../pics/covers.png');  /* Page 1 image */
+    background-size: cover;
+}
+
+.sample-docs .p2 {
+    background-position: -393px 0;
+    background-size: cover;
+}
+
+.sample-docs .p6{
+	background:-webkit-gradient(linear, left top, right top, color-stop(0.95, #fff), color-stop(1, #dadada));
+	background-image:-webkit-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:-moz-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:-ms-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:-o-linear-gradient(left, #fff 95%, #dadada 100%);
+	background-image:linear-gradient(left, #fff 95%, #dadada 100%);
+}
+
+.sample-docs .p7{
+	background-position:-785px 0;
+	background-size: cover;
+}
+
+.sample-docs .p8{
+	background-position:-1177.5px 0;
+	background-size: cover;
+}
+.sample-docs .page-wrapper {
+    perspective: 2000px;
+}
+
+.sample-docs .tabs {
+    display: none;  /* Hide tabs for now */
+}
+
+.sample-docs .tabs > div {
+    width: 461px;
+    height: 22px;
+    float: left;
+}
+
+.sample-docs .tabs .left {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.sample-docs .tabs .right {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.sample-docs .tabs a {
+    color: black;
+    border-width: 5px 20px 5px 20px;
+    display: inline-block;
+    font: bold 11px arial;
+    text-shadow: 1px 1px 0 #ddd;
+    color: #333;
+    line-height: 12px;
+    text-decoration: none;
+}
+
+.sample-docs .tabs .on,
+.sample-docs .tabs .on:hover {
+    cursor: default;
+}
+
+.sample-docs .tabs a:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
